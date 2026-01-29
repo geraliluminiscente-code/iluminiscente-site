@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aluguer de Material | Iluminiscente</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+ <div class="topbar">
+  <div class="container wrap">
+    <div>📍 Iluminiscente – Malveira – 2665-191 Abrunheira</div>
+    <div>
+      📞 <a href="tel:+351964117008">964 117 008</a> · ✉️
+      <a href="mailto:geral.iluminiscente@gmail.com">geral.iluminiscente@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+
+    <img class="logo-img"
+     src="assets/img/logo.png"
+     alt="Iluminiscente Saúde">
+
+        <div><h1>Iluminiscente</h1><small>Aluguer e apoio geriátrico</small></div>
+      </a>
+      <nav class="navlinks" aria-label="Menu">
+        <a href="aluguer.html">Aluguer</a>
+        <a href="formacoes-domicilio.html">Formações ao Domicílio</a>
+        <a href="formacoes-fev-2026.html">Fevereiro 2026</a>
+        <a href="sobre.html">Sobre</a>
+       
+        <a href="contactos-iluminiscente.html">Contactos</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+      </nav>
+      <div class="actions">
+        <a class="btn" href="mailto:geral.iluminiscente@gmail.com?subject=Pedido%20de%20Informa%C3%A7%C3%A3o%20-%20Aluguer%20de%20Material&body=Ol%C3%A1,%20pretendo%20informa%C3%A7%C3%A3o%20sobre%20aluguer.%0A%0ANome:%0ATelefone:%0AMorada:%0AProduto:%0ADatas%20pretendidas:%0A">Pedir Informação</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h3>Aluguer de Material</h3>
+      <p>Selecione o equipamento e envie um pedido com <strong>telefone</strong> e <strong>datas pretendidas</strong>.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h4>Cama Articulada</h4>
+          <p><strong>185,00€ / mês</strong> (mínimo 30 dias). Inclui transporte, instalação e recolha. Dia adicional: 6€.</p>
+          <a class="btn btn-primary" href="cama-articulada.html">Ver detalhes</a>
+        </article>
+
+        <article class="card">
+          <h4>Cadeiras de Rodas</h4>
+          <p>5 opções (patim elevatório, standard, escadas, obesos, crianças). Entrega/montagem: 50€.</p>
+          <a class="btn btn-primary" href="cadeiras-rodas.html">Ver detalhes</a>
+        </article>
+
+        <article class="card">
+          <h4>Formações associadas</h4>
+          <p>Cuidados geriátricos básicos (100€ / 2h) e posicionamentos (50€ / 1h).</p>
+          <a class="btn btn-primary" href="formacoes-domicilio.html">Ver formações</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Iluminiscente</strong><br/>
+        Sede Social: Iluminiscente – Malveira – 2665-191 Abrunheira<br/>
+        📞 <a href="tel:+351964117008">964 117 008</a> · ✉️ <a href="mailto:geral.iluminiscente@gmail.com">geral.iluminiscente@gmail.com</a>
+      </div>
+      <div class="muted">© <span id="y"></span> Iluminiscente.</div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+<section class="section">
+  <div class="container">
+    <h3>Avaliação do Serviço</h3>
+    <p class="muted">Avalie a sua experiência (1 a 5 estrelas)</p>
+
+    <form action="https://formspree.io/f/xpqqwode" method="POST" class="rating-form">
+
+      <input type="hidden" name="_subject" value="Nova Avaliação - Iluminiscente">
+      <input type="hidden" name="servico" value="Formação / Aluguer">
+
+      <!-- Estrelas -->
+      <div class="stars">
+        <input type="radio" id="star5" name="avaliacao" value="5" required>
+        <label for="star5">★</label>
+
+        <input type="radio" id="star4" name="avaliacao" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="avaliacao" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="avaliacao" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="avaliacao" value="1">
+        <label for="star1">★</label>
+      </div>
+
+      <!-- Nome -->
+      <p>
+        <label>Nome (opcional)<br>
+          <input type="text" name="nome">
+        </label>
+      </p>
+
+      <!-- Comentário -->
+      <p>
+        <label>Comentário<br>
+          <textarea name="comentario" rows="4" required></textarea>
+        </label>
+      </p>
+
+      <button class="btn btn-primary" type="submit">
+        Enviar Avaliação
+      </button>
+
+    </form>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h3>Avaliações</h3>
+
+    <!-- MÉDIA MANUAL -->
+    <div class="reviews-summary card">
+      <div>
+        <div class="rating-big">
+          <span class="rating-number">4.8</span>
+          <span class="rating-outof">/5</span>
+        </div>
+
+        <!-- estrelas visuais (manual) -->
+        <div class="stars-static" aria-label="Avaliação média 4.8 de 5">
+          ★★★★★
+        </div>
+
+        <p class="muted" style="margin:6px 0 0;">
+          Baseado em <strong>26 avaliações</strong>
+        </p>
+      </div>
+
+      <!-- distribuição opcional (manual) -->
+      <div class="rating-bars">
+        <div class="bar-row"><span>5</span><div class="bar"><div class="fill" style="width:78%"></div></div><span class="muted">78%</span></div>
+        <div class="bar-row"><span>4</span><div class="bar"><div class="fill" style="width:18%"></div></div><span class="muted">18%</span></div>
+        <div class="bar-row"><span>3</span><div class="bar"><div class="fill" style="width:3%"></div></div><span class="muted">3%</span></div>
+        <div class="bar-row"><span>2</span><div class="bar"><div class="fill" style="width:1%"></div></div><span class="muted">1%</span></div>
+        <div class="bar-row"><span>1</span><div class="bar"><div class="fill" style="width:0%"></div></div><span class="muted">0%</span></div>
+      </div>
+    </div>
+
+    <!-- COMENTÁRIOS FIXOS -->
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 de 5">★★★★★</div>
+        <p class="review-text">“Muito profissional, explicou tudo com calma e ajudou-nos imenso em casa.”</p>
+        <p class="review-author">— Maria, Lisboa</p>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 de 5">★★★★★</div>
+        <p class="review-text">“Entrega rápida da cama articulada e instalação impecável. Recomendo.”</p>
+        <p class="review-author">— João, Mafra</p>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="4 de 5">★★★★☆</div>
+        <p class="review-text">“Formação muito útil e prática. Ficámos mais confiantes nos cuidados diários.”</p>
+        <p class="review-author">— Carla, Loures</p>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 de 5">★★★★★</div>
+        <p class="review-text">“Serviço humano, atencioso e com orientação clara. Excelente apoio.”</p>
+        <p class="review-author">— Ana, Sintra</p>
+      </article>
+    </div>
+
+<p class="muted" style="font-size:13px;">
+  Os dados pessoais recolhidos são utilizados exclusivamente para responder ao seu pedido.
+  O tratamento dos dados é da responsabilidade da <strong>Iluminiscente</strong>.
+</p>
+
+  </div>
+</section>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
