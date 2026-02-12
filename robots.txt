@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://geraliluminiscente-code.github.io/iluminiscente-site/sitemap.xml
