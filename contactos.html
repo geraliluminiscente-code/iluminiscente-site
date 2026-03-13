@@ -1,53 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Contactos | Iluminiscente</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulário de Contacto | Iluminiscente</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-
-  <h2>Contactos - Iluminiscente</h2>
-
-  <p>Preencha o formulário para enviar o seu pedido.</p>
-
-<p class="muted" style="font-size:13px;">
-  Os dados pessoais recolhidos são utilizados exclusivamente para responder ao seu pedido.
-  O tratamento dos dados é da responsabilidade da <strong>Iluminiscente</strong>.
-</p>
-
-  <form action="https://formspree.io/f/xpqqwode" method="POST">
-
-    <!-- Anti-spam -->
-    <input type="text" name="_gotcha" style="display:none">
-
-    <p>
-      Nome:<br>
-      <input type="text" name="nome" required>
-    </p>
-
-    <p>
-      Assunto:<br>
-      <input type="text" name="Assunto" required>
-    </p>
-
-    <p>
-      Telefone:<br>
-      <input type="tel" name="telefone" required>
-    </p>
-
-    <p>
-      Email:<br>
-      <input type="email" name="email">
-    </p>
-
-    <p>
-      Mensagem:<br>
-      <textarea name="mensagem" rows="5" required></textarea>
-    </p>
-
-    <button type="submit">Enviar Pedido</button>
-
-  </form>
-
+  <main class="section">
+    <div class="container">
+      <div class="card">
+        <h2>Contactos - Iluminiscente</h2>
+        <p>Preencha o formulário para enviar o seu pedido.</p>
+        <p class="muted" style="font-size:13px;">Os dados pessoais recolhidos são utilizados exclusivamente para responder ao seu pedido. O tratamento dos dados é da responsabilidade da <strong>Iluminiscente</strong>.</p>
+        <form action="https://formspree.io/f/xpqqwode" method="POST">
+          <input type="text" name="_gotcha" style="display:none">
+          <p>Nome:<br><input type="text" name="nome" required></p>
+          <p>Assunto:<br><input type="text" name="assunto" required></p>
+          <p>Telefone:<br><input type="tel" name="telefone" required></p>
+          <p>Email:<br><input type="email" name="email"></p>
+          <p>Mensagem:<br><textarea name="mensagem" rows="5" required></textarea></p>
+          <button class="btn btn-primary" type="submit">Enviar Pedido</button>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
